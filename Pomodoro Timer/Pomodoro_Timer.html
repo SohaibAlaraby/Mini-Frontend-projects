@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Pomodoro_Timer.css">
+</head>
+<body>
+    <div class="toggle">
+        <div class="toggle-text">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </div>
+        <div class="toggle-circle"></div>
+    </div>
+    <div class="pomodoro-container">
+        <h1>pomodoro timer</h1>
+        <!-- inputmode numeric to make mobile open numeric keyboard-->
+        <div class="time-container">
+            <time contenteditable="true" inputmode="numeric" id="hours">00</time>
+            <span>:</span>
+            <time contenteditable="true" inputmode="numeric" id="minutes">25</time>
+            <span>:</span>
+            <time contenteditable="true" inputmode="numeric" id="seconds">00</time>
+        </div>
+        <div class="controls-container">
+            <button id="start">start</button>
+            <button id="stop">stop</button>
+            <button id="reset">reset</button>
+        </div>
+    </div>
+    <script src="Pomodoro_Timer.js"></script>
+
+</body>
+</html>
